@@ -20,7 +20,9 @@ BuildRequires: perl(DateTime::Format::Natural)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::Most)
+BuildRequires: perl(Test::Warn)
 BuildRequires: perl(Time::Zone)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -35,7 +37,6 @@ timezone detection and selection).
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -53,5 +54,3 @@ rm -rf %buildroot
 %doc README Changes META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
