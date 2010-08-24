@@ -1,5 +1,5 @@
 %define upstream_name    DateTimeX-Easy
-%define upstream_version 0.088
+%define upstream_version 0.089
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
