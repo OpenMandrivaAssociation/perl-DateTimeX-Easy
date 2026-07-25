@@ -1,19 +1,19 @@
 %define upstream_name    DateTimeX-Easy
-%define upstream_version 0.089
+%define upstream_version 0.092
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(DateTimeX::Easy::DateParse\\)'
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Parse a date/time string using the best method available
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTimeX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/jjn1056/datetimex-easy
+Source0:	https://cpan.metacpan.org/authors/id/J/JJ/JJNAPIORK/DateTimeX-Easy-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
